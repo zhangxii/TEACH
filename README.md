@@ -5,8 +5,7 @@ TEACH: Tutoring LLMs in Solving Competitive Programming through Critical Hints
 ## Overview
 TeaCH, a method that tutors LLMs to solve competitive programming 
 by combining critical hints with structured Chains of Thought (CoT).
-![workflow.pdf](data%2Fworkflow.pdf)
-
+![workflow.pdf](data/workflow.pdf)
 # Environment Setup
 
 - Python: Make sure you have Python installed on your system.
