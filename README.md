@@ -8,8 +8,8 @@ by combining critical hints with structured Chains of Thought (CoT).
 
 ## Environment Setup
 
-- Python: Make sure you have Python installed on your system.
-- Java: Install Java to enable support for Java-based packages used in this project.
+- Python >=3.10
+- Java: JDK1.8
 
 ### Step 1: Install Python dependencies
 Create a new Python environment using conda:
