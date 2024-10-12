@@ -1,10 +1,13 @@
 # TEACH
 TEACH: Tutoring LLMs in Solving Competitive Programming through Critical Hints
 
-# Overview
-This project focuses on performing experiments on hints for inference. The objective is to analyze the effectiveness of various hint-based approaches in improving model inference accuracy and relevance.
 
-## Environment Setup
+## Overview
+TeaCH, a method that tutors LLMs to solve competitive programming 
+by combining critical hints with structured Chains of Thought (CoT).
+![workflow.pdf](data%2Fworkflow.pdf)
+
+# Environment Setup
 
 - Python: Make sure you have Python installed on your system.
 - Java: Install Java to enable support for Java-based packages used in this project.
