@@ -5,7 +5,8 @@
 TEACH, a method that tutors LLMs to solve competitive programming 
 by combining critical hints with structured Chains of Thought (CoT).
 ![workflow](./data/workflow.png)
-# Environment Setup
+
+## Environment Setup
 
 - Python: Make sure you have Python installed on your system.
 - Java: Install Java to enable support for Java-based packages used in this project.
@@ -54,10 +55,10 @@ okio-jvm-3.6.0.jar
 searchableOptions.jar
 ```
 
-# Generating code by TEACH
+## Generating code by TEACH
 
 
-## Generate hints
+### Generate hints
 All experiments were conducted on machines equipped with an Intel(R) Xeon(R) 2.10GHz CPU and a 24GB NVIDIA RTX 4090 GPU, running on the Ubuntu 20.04 platform.
 
 You could use a server or computer with a 4090 GPU to run this inference.
@@ -82,7 +83,7 @@ python batch_gen_leetcode.py
 ```
 
 
-## Generate code and submit to leetcode
+### Generate code and submit to leetcode
 
 If you want to generate code and submit to leetcode, get the leetcode account cookie and openai api key, then you can run the following command:
 
@@ -132,9 +133,9 @@ Arguments:
 
 
 
-# Fine-tuning with leetcode data
+## Fine-tuning with leetcode data
 
-## Data Preparation
+### Data Preparation
 Construct the instruction data for the fine-tuning model. 
 The data is stored in the `data/leetcode` directory. The data is constructed as follows:
 
@@ -143,8 +144,10 @@ python src/ft/hint/data_construct/leetcode_ft.py
 ```
 
 
-## Fine-tuning
+### Fine-tuning
 
 ```shell
 CUDA_VISIBLE_DEVICES=0 llamafactory-cli train examples/lora_single_gpu/llama3_lora_sft.yaml
 ```
+
+The model saves the checkpoints in the `src/ft/saves` directory.
